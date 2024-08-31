@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*, p { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+$fontSans: 'Josefin Sans';
+$fontSerif: 'Ibarra Real Nova';
+$rosa: #FFDFED;
+$blanco: #EDFDFF;
+$negro: #202020;
+
+@mixin flexCenter($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  @include flexCenter(row);
+  padding: 16px 32px;
+  width: fit-content;
+  font-family: $fontSans;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+.btn-bck {
+  color: $rosa;
+  background: $negro;
+  border: 2px solid $rosa;
+}
+
+.btn-pnk_bl {
+  color: $negro;
+  background: $rosa;
+  border: 2px solid $negro;
+}
+
+.btn-pnk_wh {
+  color: $negro;
+  background: $blanco;
+  border: 2px solid $negro;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+  height: 500px;
+}
+
+.icon {
+  height: 117px;
+  width: auto;
+}
+
+.icon__content {
+  @include flexCenter(column);
+  gap: 14px;
+
+  .icon {
+    width: auto;
+    height: 105px;
+  }
+
+  .titular {
+    font-family: $fontSans;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

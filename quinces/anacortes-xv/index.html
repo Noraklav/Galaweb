@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>XV Años Ana</title>
+</head>
+<body>
+  <!-- Banner Hero -->
+  <section class="main__hero">
+    <img src="./assets/hero_banner-xv.webp" class="xv__text" alt=""
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-anchor-placement="top-bottom"
+    >
+  </section>
+
+  <!-- Fiesta -->
+  <section class="party__container">
+    <div class="icon__content">
+      <img src="./assets/copas_fiesta.svg" class="icon" alt="Fiesta">
+      <p class="titular">Fiesta</p>
+    </div>
+
+    <p class="description">!Te espero el Sábado 09 de Noviembre desde las <br>
+      21:00 a 4:30am para festejar este gran momento de mi vida!<br>
+      El lugar va a ser en 12 de Octubre 8360
+    </p>
+    <a target="_blank" rel="noopener" href="#mapa" class="button btn-bck">Cómo llegar</a>
+  </section>
+
+  <!-- Dress Code + Confirmacion de asistencia -->
+  <section class="block__1">
+    <!-- Dress Code -->
+    <div class="dress__code block">
+      <div class="icon__content">
+        <img src="./assets/dress_code.svg" class="icon" alt="Dress Code">
+        <p class="titular">Dress Code</p>
+      </div>
+      <div class="type_dress">Elegante</div>
+    </div>
+
+    <!-- Asistencia -->
+    <div class="asistence block">
+      <div class="icon__content">
+        <img src="./assets/asistencia.svg" class="icon" alt="Asistencia">
+        <p class="titular">Confirmar Asistencia</p>
+      </div>
+      <div class="text">
+        <p>¿Cuento con tu presencia?</p>
+        <p>¡Confirmámelo!</p>
+        <a target="_blank" rel="noopener" href="#enlace__forms" class="button btn-bck">&nbsp;&nbsp;&nbsp;Confirmar&nbsp;&nbsp;&nbsp;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social -->
+  <section class="block__2">
+
+    <!-- Instagram -->
+    <div class="instagram block">
+      <div class="icon__content">
+        <img src="./assets/instagram.svg" class="icon" alt="Instagram">
+        <p class="titular">Instagram</p>
+      </div>
+      <div class="text">
+        <p>Etiquetame en las <br>fotos que saques!</p>
+        <a target="_blank" rel="noopener" href="#enlace__instagram" class="button btn-bck">Ver Instagram</a>
+      </div>
+    </div>
+
+    <!-- Musica -->
+    <div class="music block">
+      <div class="icon__content">
+        <img src="./assets/musica.svg" class="icon" alt="Musica">
+        <p class="titular">Musica</p>
+      </div>
+      <div class="text">
+        <p>¿Cuáles canciones me <br>recomendas?</p>
+        <a target="_blank" rel="noopener" href="#enlace__instagram" class="button btn-pnk_bl">Recomendar</a>
+      </div>
+    </div>
+
+    <!-- Regalos -->
+    <div class="gift block">
+      <div class="icon__content">
+        <img src="./assets/regalo.svg" class="icon" alt="Regalo">
+        <p class="titular">Regalos</p>
+      </div>
+      <div class="text">
+        <p>¿Te animás a hacerme <br>un regalito?</p>
+        <button class="button btn-pnk_wh" onclick="showGift()">Hacer regalo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="map__container" id="mapa">
+    <p class="titulo">Acá podes ver como llegar</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.6217731592246!2d-57.59381132410556!3d-38.009281771927135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ded16917bea3%3A0xc8bb467c411071d7!2s12%20de%20Octubre%208360%2C%20B7611FJB%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725069770527!5m2!1ses-419!2sar"
+    style="border:0;"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  
+  <!-- Agradecimientos -->
+  <footer class="footer">
+    <p class="thanks">¡Gracias por estar acá conmigo en este día tan especial!</p>
+  </footer>
+
+  <!-- Creditos -->
+   <div class="copy">
+    <span>Invitación hecha por <a target="_blank" rel="noopener" href="https://linktr.ee/axolot_studio">©Axolot Studio</a> | Todos los derechos reservados</span>
+   </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/index.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
