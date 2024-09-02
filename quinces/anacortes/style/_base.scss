@@ -9,6 +9,8 @@ $rosa: #FFDFED;
 $blanco: #EDFDFF;
 $negro: #202020;
 
+$p-30: 30px 0;
+
 @mixin flexCenter($dir) {
   display: flex;
   flex-direction: $dir;
@@ -76,5 +78,24 @@ $negro: #202020;
     line-height: 45px;
     text-align: center;
     margin-bottom: 15px;
+  }
+}
+
+// * Estilos mobile
+@media (max-width: 992px) {
+  .icon__content {
+    @include flexCenter(column);
+    gap: 14px;
+  
+    .icon {
+      width: auto;
+      height: 80px;
+    }
+  
+    .titular {
+      font-size: 38px;
+      line-height: 35px;
+      margin-bottom: 0;
+    }
   }
 }
